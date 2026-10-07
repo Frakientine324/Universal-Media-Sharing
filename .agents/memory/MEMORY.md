@@ -1,0 +1,1 @@
+- [Public media gallery scope](public-media-gallery-scope.md) — browsing is public; sign-in is only for publishing and managing one's own posts.

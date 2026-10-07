@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Media Board"
+description = "A responsive public media-sharing website where people can post photos and videos, browse a shared feed, and open shareable post links on phones, tablets, and computers."
+version = "1.0.0"
+id = "artifacts/media-board"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21750
+
+[services.development]
+run = "pnpm --filter @workspace/media-board run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/media-board", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/media-board/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21750"
+BASE_PATH = "/"
