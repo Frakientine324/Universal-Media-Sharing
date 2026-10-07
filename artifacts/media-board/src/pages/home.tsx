@@ -20,8 +20,8 @@ export function HomePage({ onCreate }: { onCreate: () => void }) {
       <div className="mx-auto grid min-h-[490px] max-w-[1320px] grid-cols-1 items-center px-5 py-16 sm:min-h-[555px] sm:px-8 sm:py-20 lg:grid-cols-[1.15fr_.85fr]">
         <div className="relative z-10 max-w-[700px]">
           <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-[hsl(var(--border))] bg-[hsl(var(--card)/.78)] px-3.5 py-2 font-mono text-[10px] uppercase tracking-[.14em] text-[hsl(var(--primary))]"><span className="h-1.5 w-1.5 rounded-full bg-[hsl(var(--accent))]" /> An open gallery for everyone</p>
-          <h1 className="font-serif text-[clamp(3.4rem,8vw,7rem)] font-semibold leading-[.89] tracking-[-.075em]">The world,<br /><span className="relative inline-block text-[hsl(var(--primary))]">as you see it.</span></h1>
-          <p className="mt-7 max-w-[470px] text-base leading-7 text-[hsl(var(--muted-foreground))] sm:text-lg sm:leading-8">A public wall for the small scenes, faraway places and perfectly ordinary days worth keeping.</p>
+          <h1 className="font-serif text-[clamp(3.4rem,8vw,7rem)] font-semibold leading-[.89] tracking-[-.075em]">Good choices.<br /><span className="relative inline-block text-[hsl(var(--primary))]">Better results.</span></h1>
+          <p className="mt-7 max-w-[470px] text-base leading-7 text-[hsl(var(--muted-foreground))] sm:text-lg sm:leading-8">Explore videos on wealth, mindset, and strategy. The key is to apply what you learn—and take action.</p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <button onClick={onCreate} className="inline-flex items-center gap-2 rounded-full bg-[hsl(var(--primary))] px-6 py-3.5 text-sm font-bold text-[hsl(var(--primary-foreground))] shadow-sm transition-transform hover:-translate-y-0.5" data-testid="button-hero-create">Put something out there <ArrowUpRight size={17} /></button>
             <a href="#recent" className="inline-flex items-center gap-2 px-2 py-3 text-sm font-bold text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))]" data-testid="link-explore">Wander around <ArrowDown size={15} /></a>
